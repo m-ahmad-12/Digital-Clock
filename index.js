@@ -1,8 +1,8 @@
 let clock=document.querySelector(".digital_clock");
-let currentDate=new Date();
-console.log(currentDate.getHours());
-console.log(currentDate.getMinutes());
-console.log(currentDate.getSeconds());
-clock.textContent=`${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+let liveTimer=function(){
+   let currentDate=new Date();
+   clock.textContent=`${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`};
+
+setInterval(liveTimer,1000)
 
 
