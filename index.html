@@ -3,22 +3,37 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Clock App</title>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="digital_clock">
-   00:00:00
-</div>
 
-<div class="stop_watch">
-    00:00:00
- </div>
-    <button class="start">Start</button>
-    <button class="stop">Stop</button>
-    <button class="reset">Reset</button>
+  <div class="card">
+    <h2>Digital Clock</h2>
+    <div class="digital_clock">00:00:00</div>
+  </div>
 
-   <script src="index.js"></script>
+  <div class="card">
+    <h2>Stopwatch</h2>
+    <div class="stop_watch">00:00:00</div>
+    <div class="buttons">
+      <button class="start">Start</button>
+      <button class="stop">Stop</button>
+      <button class="reset">Reset</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Countdown</h2>
+    <div class="countdown">00:00:00</div>
+    <div class="buttons">
+      <button class="five">+5s</button>
+      <button class="ten">+10s</button>
+      <button class="fifteen">+15s</button>
+      <button class="countdownbtn">Start</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
-
